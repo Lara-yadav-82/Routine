@@ -1,39 +1,216 @@
-body {
-     color: #f8f6f6;
-     font-family: Arial, Helvetica, sans-serif;
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+   
+
+}
+.nav{
+    padding-right: 40px ;
+    padding-top: 7px;
+}
+
+.container{
+    margin:110px;
+}
+
+.homepage{
+    height: 90vh;
+    
+}
+
+
+.bar{
+   
+    font-family: 'JetBrains Mono' , monospace;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100px;
+    position: fixed;
+    background: white;
+    padding: 0;
+    margin: 0;
+
+    
+}
+.Logo  img{
+    
+    
+    background-repeat: no-repeat;
+    background-size:contain;
+    width:  300px;
+    height: 180px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 45px;
      
-     /* background:grey; */
-     background-size: 100%;
-     background-image: url("4444.jpg");
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-position: center-right;
-     margin: 40px;
-     padding: 0;
-     
- }
- 
- .container {
- 
-     background-image: linear-gradient(to bottom,black,grey);
-     text-shadow: 2cm;
-     position: absolute;
-     top: 0;
-     right: 100;
-     border-color: rgb(10, 10, 10);
-     border-style: solid;
-     border-width: 1px;
-     border-radius: 10px;
-     width: 30%;
-     height: 60%;
-     margin:10% 30% 10% 30%;
- 
-     padding: 20px;
-     text-align: center;
-     
- }
- 
- .contant {
-     display: flex;
- }
- 
+}
+
+
+
+
+
+
+
+ul{
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+
+
+.body{
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'JetBrains Mono', monospace;
+    align-items: center;
+    
+}
+
+
+.title{
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.para{
+    
+    font-size: 30px;
+    width: 700px;
+    
+}
+
+
+
+#content{
+    display: flex;
+    
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+    
+
+    
+}
+
+#content-title{
+
+    font-family: 'Roboto', sans-serif;
+    padding:40px;
+
+    
+}
+#You , #We{
+    font-size: 6em;
+    font-weight: 600;
+    animation: slide 1s ease-in 1s;
+    
+}
+
+.allpics{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.content-details{
+    display: flex;
+    
+}
+
+.content-title{
+    padding-left: 80px;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+    font-family: 'Poppins',monospace;
+    font-weight: 500;
+    font-size: 22px;
+    
+}
+
+#task{
+    height: 400px;
+
+}
+
+.allpics{
+    background-color: 
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(-70%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+table, th, td {
+    border:3px solid black;
+  }
+  table{
+    width:100%;
+  }
+
+   .whole_background{
+    color: #f8f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* background:grey; */
+    background-size: 100%;
+    background-image: url("4444.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center-right;
+    margin: 40px;
+    padding: 0;
+    
+}
+
+.inner-container {
+
+    background-image: linear-gradient(to bottom,black,grey);
+    text-shadow: 2cm;
+    position: absolute;
+    
+    right: 100;
+    border-color: rgb(10, 10, 10);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    width: 30%;
+    height: 60%;
+    margin:10% 30% 10% 30%;
+
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+
+
