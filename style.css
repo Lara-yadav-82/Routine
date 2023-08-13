@@ -1,62 +1,25 @@
-
 body{
     height: 100vh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     margin: 0px;
-   
+    padding: 0px;
 
 }
-.nav{
-    padding-right: 40px ;
-    padding-top: 7px;
-}
-
-.container{
-    margin:110px;
-}
-
-.homepage{
-    height: 90vh;
-    
-}
-
 
 .bar{
-   
     font-family: 'JetBrains Mono' , monospace;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
-    width: 100vw;
-    height: 100px;
-    position: fixed;
-    background: white;
-    padding: 0;
-    margin: 0;
-
     
 }
-.Logo  img{
-    
-    
-    background-repeat: no-repeat;
-    background-size:contain;
-    width:  300px;
-    height: 180px;
-    transform: translateY(-50%);
-    padding: 0px;
-    margin: 45px;
-     
+
+.Home{
+    padding-top: 10px;
 }
-
-
-
-
-
-
 
 ul{
     
@@ -70,12 +33,13 @@ ul{
 
 
 .body{
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     font-family: 'JetBrains Mono', monospace;
     align-items: center;
     
+
 }
 
 
@@ -99,28 +63,45 @@ ul{
 
 #content{
     display: flex;
-    
-    justify-content: space-evenly;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*align-items: center;*/
     color: white;
-    background-color: black;
+    font-family: 'Poppins' , monospace;
+   
     
+    
+    
+}
 
+.content-details{
+    background-color: #131316;
+    display: flex;
+    text-align: center;
     
 }
 
 #content-title{
-
+    display: grid;
+    align-items: center;
     font-family: 'Roboto', sans-serif;
-    padding:40px;
-
+    margin: 20px;
+    
     
 }
 #You , #We{
+  
     font-size: 6em;
     font-weight: 600;
-    animation: slide 1s ease-in 1s;
+    
     
 }
+
+#You{
+    padding-right: 40px;
+}
+
+
 
 .allpics{
 
@@ -129,12 +110,12 @@ ul{
     
 }
 
-.content-details{
-    display: flex;
-    
-}
+
 
 .content-title{
+    display: grid;
+    align-items: center;
+    margin: -10px;
     padding-left: 80px;
 }
 
@@ -143,11 +124,97 @@ ul{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    text-align: center;
     color: white;
     font-family: 'Poppins',monospace;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 32px;
     
+}
+
+section{
+    min-height: 60vh;
+    display: grid;
+    align-items: center;
+}
+
+.inner-sec{
+    background-color: #FECD04;
+    animation: animate 1s ease-in-out 1s;
+
+}
+
+.outer-sec{
+    background-color: #0049C0;
+    animation: animate 1s ease-in-out 1.3s;
+
+
+}
+@keyframes animate {
+
+    from{
+        opacity: 0;
+        transform: translateX(+100%);
+
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+    
+}
+
+.Generate{
+   
+    color: #FF7235;
+
+
+}
+.start{
+    padding-top: 20px;
+    font-size: 80px;
+    font-weight: 500;
+    text-align: center;
+
+}
+.icons{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+
+#Institution{
+ 
+   background-image: url("./calendar.jpg");
+   background-size: cover;
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+  
+    
+}
+
+#Personal {
+    background-image: url("./book.jpg");
+   background-size: cover;
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   
+  
+}
+   
+
+.description{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
 }
 
 #task{
@@ -155,19 +222,9 @@ ul{
 
 }
 
-.allpics{
-    background-color: 
-}
 
-@keyframes slide{
-    from{
-        transform: translateX(-70%);
-    }
 
-    to{
-        transform: translateX(0);
-    }
-}
+
 
 table, th, td {
     border:3px solid black;
